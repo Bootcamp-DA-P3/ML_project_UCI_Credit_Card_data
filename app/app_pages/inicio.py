@@ -13,8 +13,8 @@ tema.insight(
     "septiembre de 2005, con importes en dólares taiwaneses (NT$).",
     "Queremos estimar el límite de crédito (LIMIT_BAL) a partir del perfil y "
     "del historial de 6 meses de facturas y pagos.",
-    "La app muestra el análisis de los datos y, cuando el modelo final esté "
-    "listo, la predicción.",
+    "La app muestra el análisis de los datos y estima el límite de un cliente "
+    "con el modelo final.",
 )
 
 with st.container(horizontal=True):
@@ -22,6 +22,9 @@ with st.container(horizontal=True):
     st.metric("Variables", r["columnas"], border=True)
     st.metric("Meses de historial", r["meses_historial"], border=True)
 
-st.page_link("app_pages/dashboard.py", label="Ver el dashboard",
-             icon=":material/arrow_outward:")
+with st.container(horizontal=True):
+    st.page_link("app_pages/dashboard.py", label="Ver el dashboard",
+                 icon=":material/arrow_outward:")
+    st.page_link("app_pages/prediccion.py", label="Calcular un límite",
+                 icon=":material/arrow_outward:")
 tema.status_bar(f"DATOS: UCI_CREDIT_CARD.CSV · {filas} FILAS")

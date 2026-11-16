@@ -46,7 +46,7 @@ Lo actualiza quien tiene o cierra el turno.
 | T05 | Ensembles A: Random Forest y Gradient Boosting con validacion cruzada | Franco | `franco/ensembles-rf-gb` | notebook unico, seccion 9 | T03 | hecha |
 | T06 | Ensembles B: XGBoost con validacion cruzada | Olena | `olena/ensembles-xgboost` | notebook unico, seccion 10 | T05 | hecha |
 | T07 | Optuna, modelo final e informe de metricas | Franco | `franco/optuna-modelo-final` | notebook unico, secciones 11 y 12; `models/modelo_final.joblib` | T05, T06 | en revision |
-| T08 | App: prediccion con el modelo final y recogida de feedback | Franco | `franco/app-modelo-feedback` | `app/` | T04, T07 | pendiente |
+| T08 | App: prediccion con el modelo final y recogida de feedback | Franco | `franco/app-modelo-feedback` | `app/` | T04, T07 | en curso |
 | T09 | README final | Olena | `olena/readme-final` | `README.md` | T07, T08 | pendiente |
 
 ## Orden de turnos y trabajo en paralelo
@@ -65,7 +65,7 @@ Lo actualiza quien tiene o cierra el turno.
 | `docs/PLAN.md` | Franco | Aviso en `OBSERVACIONES.md` y pull request |
 | `src/preprocesamiento.py` | Franco | Olena pide cambios en `OBSERVACIONES.md` |
 | `requirements.txt` | Franco | Quien necesite una libreria nueva lo avisa en `OBSERVACIONES.md` |
-| `app/` | Olena | Franco pide cambios en `OBSERVACIONES.md` |
+| `app/` | Franco | Olena pide cambios en `OBSERVACIONES.md` |
 | `docs/TAREAS.md` | Los dos | Cada uno solo sus filas |
 | `OBSERVACIONES.md` | Los dos | Cada uno solo su seccion |
 
