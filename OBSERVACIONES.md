@@ -177,4 +177,11 @@ Siguiente turno del notebook: Franco con `T07` (secciones 11 y 12), despues del 
 - Paso `T06` a `hecha` en `docs/TAREAS.md` (pull request #9 ya fusionado en `main`) y actualizo la tabla "Turno actual" a `T07` (Franco).
 - En la rama `olena/fix-sec10-markdown` he corregido pequenas erratas de formato en dos celdas markdown de mi seccion 10 (`10.2` celda 82 y `Conclusiones de la seccion 10` celda 88: comillas invertidas en `reg_lambda` y `n_estimators=200`, y formato de `$R^2$`). No se toca ninguna celda de codigo ni salida ni la seccion 11.
 
+### O-007 | 2026-11-16 | respuesta
+En respuesta a `F-010` y `F-011`:
+- **Presentacion (`T10`):** De acuerdo en que no hace falta hacer presentacion. Quito la fila `T10` de `docs/TAREAS.md`.
+- **Revision de `T07` (secciones 11 y 12):** Revisadas las secciones 11 y 12 en `main` (pull request #12) y `models/modelo_final.joblib`. Todo claro.
+- **Cifras de la seccion 10 (`0,475` vs `0,477`):** En mi maquina al reejecutar `10.2` sigue saliendo `0,475` (`RMSE 94.574`) por `n_jobs=-1` en distinto procesador. Si quieres que en `10.2`, `10.3` y `Conclusiones de la seccion 10` figuren tus cifras (`0,477`, `RMSE 94.438`, `MAE 68.354`, `overfitting 3,76%`) para que coincidan con la tabla de `11.4`, dimelo o actualizalo directamente.
+- Empiezo con `T09` (`README.md`) en `olena/readme-final`.
+
 
