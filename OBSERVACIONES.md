@@ -103,6 +103,29 @@ Propuesta de cambio en el reparto: me gustaria hacer yo la app de Streamlit (`T0
 - **Reparto actualizado (acordado, ver `F-008`):** la app (`T04` y `T08`) pasa a Franco y el README final (`T09`) a Olena, ademas de `T10`. Filas cambiadas en `docs/TAREAS.md`.
 - Mientras tengo el turno puedes avanzar `T10` (presentacion).
 
+### F-010 | 2026-11-16 | aviso
+- `T04` (esqueleto de la app y dashboard) esta fusionada en `main` (pull request #8). Se ejecuta desde la raiz con `streamlit run app/app.py`. Pasa a `hecha`, igual que `T05`.
+- Gracias por `O-006`: traido a mi rama el arreglo de formato de la seccion 10.
+- Cifras de la seccion 10: al reejecutar la celda 10.2 en mi maquina sale R2 de validacion 0,477, RMSE 94.438, MAE 68.354 y overfitting 3,76% para `XGBoost regularizado (max_depth=4)`. Lo guardado en `main` y escrito en tus conclusiones es 0,475, 94.574, 68.418 y 3,86%. No he tocado tu seccion. La tabla de la seccion 11.4 sale con los valores de mi maquina (0,477). Conviene que la reejecutes y alinees las conclusiones con la salida.
+- No hace falta presentacion: el enunciado no la pide. `T10` se puede quitar de `docs/TAREAS.md`; es tu fila, quitala o dime y la quito yo.
+- Para ejecutar la app en tu maquina: crea tu `.venv` con Python 3.13 y `pip install -r requirements.txt`. El `.venv` no se sube a git.
+
+### F-011 | 2026-11-16 | traspaso
+Tarea y rama: `T07`, `franco/optuna-modelo-final`.
+Pull request: pendiente de abrir tras hacer push.
+Hecho:
+- Seccion 11 (`[F]`): Optuna con 40 pruebas para Gradient Boosting y 40 para XGBoost, eligiendo la mejor prueba entre las que cumplen el 5% de overfitting. Mejor modelo: XGBoost con R2 de validacion 0,479, RMSE 94.251 y overfitting 4,52%. Graficos de historial e importancia de hiperparametros.
+- Seccion 12 (`[F]`): evaluacion unica en test (R2 0,511, RMSE 88.233, MAE 64.496), importancia por permutacion, residuos, predicho frente a real y conclusiones con limitaciones.
+- `models/modelo_final.joblib`: pipeline completo (preprocesado y XGBoost).
+Decisiones nuevas: ninguna en `docs/PLAN.md`. Las pruebas de Optuna que pasan del 5% se descartan aunque tengan menor RMSE.
+Cambios en secciones o ficheros de la otra persona: ninguno. Ver `F-010` sobre las cifras de la seccion 10.
+Que tiene que revisar la otra persona: secciones 11 y 12 del notebook y `models/modelo_final.joblib`.
+Que le toca a la otra persona y por donde empezar:
+1. Revisar y fusionar el pull request de `T07`. Despues, `git checkout main` y `git pull`.
+2. Alinear las conclusiones de la seccion 10 con la salida, segun `F-010`, si estais de acuerdo, en una rama nueva. Para eso hay que reabrir el turno del notebook y avisarlo.
+3. `T09` (README final) depende de `T07` y `T08`: puedes ir preparando la estructura. Cifras solo las del notebook.
+Siguiente turno del notebook: ninguno, salvo las correcciones de la seccion 10.
+
 ## Seccion de Olena
 
 ### O-001 | 2026-11-10 | respuesta

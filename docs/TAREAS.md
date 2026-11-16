@@ -30,9 +30,9 @@ Lo actualiza quien tiene o cierra el turno.
 | Tiene el turno | Franco |
 | Tarea | T07 (secciones 11 y 12: Optuna, modelo final e informe de metricas) |
 | Rama | `franco/optuna-modelo-final` |
-| Estado | en curso (seccion 11 fusionada en PR #10; corregido formato markdown de seccion 10 en O-006) |
-| Siguiente turno | Cierre del notebook en T07 |
-| Mientras tanto, Olena | Avanzar T09 (README) y T10 (presentacion). No tocar el notebook |
+| Estado | en curso (pull request pendiente de abrir, traspaso `F-011`) |
+| Siguiente turno | Ninguno: con T07 el notebook queda completo |
+| Mientras tanto, Olena | Revisar el pull request de T07. No tocar el notebook |
 
 ## Tabla
 
@@ -42,10 +42,10 @@ Lo actualiza quien tiene o cierra el turno.
 | T01 | EDA A: target y perfil (`LIMIT_BAL`, `SEX`, `EDUCATION`, `MARRIAGE`, `AGE`), crear el notebook unico e integrar en el las secciones de T02 | Franco | `franco/eda-perfil` | notebook unico, secciones 0 a 3 y 6 | T00 | hecha |
 | T02 | EDA B: historial (`PAY_*`, `BILL_AMT*`, `PAY_AMT*`) y correlaciones | Olena | `olena/eda-historial` | notebook unico, secciones 4 y 5 (hecho en `notebooks/01b_eda_historial.ipynb`, se integra en T01) | T00 | hecha |
 | T03 | Limpieza, preprocesamiento y modelo base | Franco | `franco/preprocesamiento-base` | notebook unico, secciones 7 y 8; `src/preprocesamiento.py` | T01, T02 | hecha |
-| T04 | Esqueleto de la app y dashboard con graficos del EDA | Franco | `franco/app-esqueleto` | `app/` | T01, T02 | pendiente |
-| T05 | Ensembles A: Random Forest y Gradient Boosting con validacion cruzada | Franco | `franco/ensembles-rf-gb` | notebook unico, seccion 9 | T03 | en curso |
+| T04 | Esqueleto de la app y dashboard con graficos del EDA | Franco | `franco/app-esqueleto` | `app/` | T01, T02 | hecha |
+| T05 | Ensembles A: Random Forest y Gradient Boosting con validacion cruzada | Franco | `franco/ensembles-rf-gb` | notebook unico, seccion 9 | T03 | hecha |
 | T06 | Ensembles B: XGBoost con validacion cruzada | Olena | `olena/ensembles-xgboost` | notebook unico, seccion 10 | T05 | hecha |
-| T07 | Optuna, modelo final e informe de metricas | Franco | `franco/optuna-modelo-final` | notebook unico, secciones 11 y 12; `models/modelo_final.joblib` | T05, T06 | pendiente |
+| T07 | Optuna, modelo final e informe de metricas | Franco | `franco/optuna-modelo-final` | notebook unico, secciones 11 y 12; `models/modelo_final.joblib` | T05, T06 | en curso |
 | T08 | App: prediccion con el modelo final y recogida de feedback | Franco | `franco/app-modelo-feedback` | `app/` | T04, T07 | pendiente |
 | T09 | README final | Olena | `olena/readme-final` | `README.md` | T07, T08 | pendiente |
 | T10 | Presentacion | Olena | `olena/presentacion` | `docs/presentacion/` | T07, T08 | pendiente |
