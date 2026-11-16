@@ -48,13 +48,12 @@ Lo actualiza quien tiene o cierra el turno.
 | T07 | Optuna, modelo final e informe de metricas | Franco | `franco/optuna-modelo-final` | notebook unico, secciones 11 y 12; `models/modelo_final.joblib` | T05, T06 | en revision |
 | T08 | App: prediccion con el modelo final y recogida de feedback | Franco | `franco/app-modelo-feedback` | `app/` | T04, T07 | pendiente |
 | T09 | README final | Olena | `olena/readme-final` | `README.md` | T07, T08 | pendiente |
-| T10 | Presentacion | Olena | `olena/presentacion` | `docs/presentacion/` | T07, T08 | pendiente |
 
 ## Orden de turnos y trabajo en paralelo
 
 - Turnos del notebook: T01 -> T03 -> T05 -> T06 -> T07. T06 pasa a depender de T05 porque comparten notebook.
 - T02 ya se hizo en un notebook aparte antes de este acuerdo. T01 integra sus celdas como secciones 4 y 5 y borra `notebooks/01b_eda_historial.ipynb` (queda en el historial de git). Olena lo aprueba al revisar el pull request de T01.
-- En paralelo con el turno del notebook: T04 (app) durante T01 y T03; T08 (app) durante T07; T09 y T10 a la vez al final.
+- En paralelo con el turno del notebook: T04 (app) durante T01 y T03; T08 (app) durante T07; T09 al final.
 - T05 y T06 usan el mismo pipeline de `src/preprocesamiento.py` y el mismo split (`random_state=42`) para que los resultados sean comparables.
 - T07 necesita las tablas de resultados de T05 y T06.
 
