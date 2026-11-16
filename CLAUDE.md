@@ -12,4 +12,5 @@
 - Only include numeric results in the project's documents that were actually computed within this project; never add uncalculated or external figures.
 - In notebook titles, subtitles and observations, use only the words needed to be understood and write like a human, without AI-style comments.
 - Use the user's brutalist design style for the app and its dashboard pages.
+- Do not plan or include a presentation deliverable for this project; the final output is the written report only.
 <!-- end claude-reflect -->
