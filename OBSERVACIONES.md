@@ -112,7 +112,7 @@ Propuesta de cambio en el reparto: me gustaria hacer yo la app de Streamlit (`T0
 
 ### F-011 | 2026-11-16 | traspaso
 Tarea y rama: `T07`, `franco/optuna-modelo-final`.
-Pull request: pendiente de abrir tras hacer push.
+Pull request: #12.
 Hecho:
 - Seccion 11 (`[F]`): Optuna con 40 pruebas para Gradient Boosting y 40 para XGBoost, eligiendo la mejor prueba entre las que cumplen el 5% de overfitting. Mejor modelo: XGBoost con R2 de validacion 0,479, RMSE 94.251 y overfitting 4,52%. Graficos de historial e importancia de hiperparametros.
 - Seccion 12 (`[F]`): evaluacion unica en test (R2 0,511, RMSE 88.233, MAE 64.496), importancia por permutacion, residuos, predicho frente a real y conclusiones con limitaciones.
