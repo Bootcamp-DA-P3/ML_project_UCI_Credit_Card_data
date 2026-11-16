@@ -11,4 +11,5 @@
 - In notebook section titles, mark who did each part with a prefix: F for Franco or L for Lena.
 - Only include numeric results in the project's documents that were actually computed within this project; never add uncalculated or external figures.
 - In notebook titles, subtitles and observations, use only the words needed to be understood and write like a human, without AI-style comments.
+- Use the user's brutalist design style for the app and its dashboard pages.
 <!-- end claude-reflect -->
