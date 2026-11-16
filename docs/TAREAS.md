@@ -27,12 +27,12 @@ Lo actualiza quien tiene o cierra el turno.
 
 | Campo | Valor |
 |---|---|
-| Tiene el turno | Franco |
-| Tarea | T05 (seccion 9: Random Forest y Gradient Boosting) |
-| Rama | `franco/ensembles-rf-gb` |
-| Estado | en curso desde el 2026-11-11 (aviso `F-009`) |
-| Siguiente turno | T06 (Olena), despues del merge de T05 |
-| Mientras tanto, Olena | Revisar en `main` las secciones 7 y 8 (pull requests #5 y #6); empezar T10 (presentacion). No tocar el notebook |
+| Tiene el turno | Olena |
+| Tarea | T06 (seccion 10: XGBoost con validacion cruzada) |
+| Rama | `olena/ensembles-xgboost` |
+| Estado | en revision desde el 2026-11-16 (traspaso `O-005`) |
+| Siguiente turno | T07 (Franco), despues del merge de T06 |
+| Mientras tanto, Franco | Puede avanzar T04 (`app/`). No tocar el notebook |
 
 ## Tabla
 
@@ -44,7 +44,7 @@ Lo actualiza quien tiene o cierra el turno.
 | T03 | Limpieza, preprocesamiento y modelo base | Franco | `franco/preprocesamiento-base` | notebook unico, secciones 7 y 8; `src/preprocesamiento.py` | T01, T02 | hecha |
 | T04 | Esqueleto de la app y dashboard con graficos del EDA | Franco | `franco/app-esqueleto` | `app/` | T01, T02 | pendiente |
 | T05 | Ensembles A: Random Forest y Gradient Boosting con validacion cruzada | Franco | `franco/ensembles-rf-gb` | notebook unico, seccion 9 | T03 | en curso |
-| T06 | Ensembles B: XGBoost con validacion cruzada | Olena | `olena/ensembles-xgboost` | notebook unico, seccion 10 | T05 | pendiente |
+| T06 | Ensembles B: XGBoost con validacion cruzada | Olena | `olena/ensembles-xgboost` | notebook unico, seccion 10 | T05 | en revision |
 | T07 | Optuna, modelo final e informe de metricas | Franco | `franco/optuna-modelo-final` | notebook unico, secciones 11 y 12; `models/modelo_final.joblib` | T05, T06 | pendiente |
 | T08 | App: prediccion con el modelo final y recogida de feedback | Franco | `franco/app-modelo-feedback` | `app/` | T04, T07 | pendiente |
 | T09 | README final | Olena | `olena/readme-final` | `README.md` | T07, T08 | pendiente |
