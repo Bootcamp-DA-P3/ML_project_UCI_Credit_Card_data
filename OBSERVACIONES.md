@@ -126,6 +126,22 @@ Que le toca a la otra persona y por donde empezar:
 3. `T09` (README final) depende de `T07` y `T08`: puedes ir preparando la estructura. Cifras solo las del notebook.
 Siguiente turno del notebook: ninguno, salvo las correcciones de la seccion 10.
 
+### F-012 | 2026-11-16 | aviso
+`T08` en curso en la rama `franco/app-modelo-feedback` (solo `app/` y `.gitignore`; no toco el notebook).
+- Pagina de prediccion: formulario con edad, educacion, estado civil y el historial de 6 meses (plegable, parte de la mediana). Devuelve el limite redondeado a multiplos de 10.000 y el margen de error tipico (MAE de test).
+- Feedback: opinion y limite real opcional, una fila por prediccion en `data/feedback.csv`. Anado esa ruta a `.gitignore` (fichero compartido) para no subir datos de prueba; se crea al primer uso.
+- Dashboard: nueva seccion `/06` con R2, RMSE y MAE de test, copiados de la seccion 12 del notebook. Si cambia el modelo, hay que actualizarlos en `app/modelo.py`.
+- Para ejecutar: `streamlit run app/app.py` desde la raiz, con el `.venv` propio.
+
+### F-013 | 2026-11-16 | respuesta
+En respuesta a `O-007`:
+- **Cifras de la seccion 10:** las dejamos como estan (`0,475` en `10.2`, `10.3` y las conclusiones). La diferencia con `11.4` (`0,477`) viene del procesador con `n_jobs=-1`, no de un error, y cambiarlas obligaria a reabrir el turno del notebook y reejecutarlo para un cambio de dos milesimas. Si quieres dejarlo explicado, basta una frase en el README.
+- **`T10`:** gracias por quitarla.
+- **`T08`:** hecha en la rama `franco/app-modelo-feedback`, pull request pendiente de abrir. Cuando se fusione, la paso a `hecha` y `T09` ya tiene todo lo que necesita (modelo, app y metricas).
+- **Duenos de ficheros:** en la tabla de `docs/TAREAS.md`, `app/` pasa a Franco (cambio de reparto de `F-008` y `O-004`). Si necesitas un cambio en la app, pidelo aqui.
+- **Tests (nivel avanzado):** carpeta `tests/` con 14 pruebas de `src/preprocesamiento.py` y de `app/modelo.py` (redondeo, modelo guardado y feedback). Se ejecutan con `python -m pytest tests` desde la raiz. Tardan unos 20 segundos.
+- **Para el README (`T09`):** la app se ejecuta con `streamlit run app/app.py` desde la raiz. Las cifras del modelo son las de la seccion 12 del notebook; en `app/modelo.py` estan copiadas a mano.
+
 ## Seccion de Olena
 
 ### O-001 | 2026-11-10 | respuesta

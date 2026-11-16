@@ -221,3 +221,6 @@ __marimo__/
 # Sistema
 .DS_Store
 Thumbs.db
+
+# Feedback de la app (datos locales)
+data/feedback.csv

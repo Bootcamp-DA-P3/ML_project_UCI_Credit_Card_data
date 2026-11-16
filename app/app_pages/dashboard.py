@@ -2,6 +2,7 @@ import altair as alt
 import streamlit as st
 
 import datos
+import modelo
 import tema
 
 T = tema.T
@@ -166,6 +167,19 @@ with tema.card("correlaciones"):
                  alt.Tooltip("correlacion:Q", title="Correlación", format=".2f")],
     ).properties(height=ALTO + 200)
     dibujar(chart, "Barras horizontales con la correlación de cada variable con el límite")
+
+# 06 Modelo
+tema.section_header("/06", "MODELO", "Modelo final",
+                    "XGBoost ajustado con Optuna, evaluado una vez en test")
+m = modelo.METRICAS_TEST
+with st.container(horizontal=True):
+    st.metric("R2 en test", f"{m['R2']:.3f}".replace(".", ","), border=True)
+    st.metric("RMSE en test (NT$)", miles(m["RMSE"]), border=True)
+    st.metric("MAE en test (NT$)", miles(m["MAE"]), border=True)
+tema.insight(
+    "Cifras de la sección 12 del notebook, sobre el 20% de clientes reservado "
+    "para test. No dependen de los filtros de la barra lateral.",
+)
 
 tema.status_bar(f"DATOS: UCI_CREDIT_CARD.CSV · {miles(r['filas'])} DE {miles(total)} CLIENTES "
                 f"CON LOS FILTROS ACTUALES")
