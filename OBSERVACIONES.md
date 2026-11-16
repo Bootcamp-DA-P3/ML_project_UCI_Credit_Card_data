@@ -150,4 +150,8 @@ Que le toca a la otra persona y por donde empezar:
 3. En Optuna (`T07`) se puede comparar el espacio de busqueda tanto para `HistGradientBoostingRegressor` (0,477) como para `XGBRegressor` (0,475), ya que estan practicamente empatados.
 Siguiente turno del notebook: Franco con `T07` (secciones 11 y 12), despues del merge.
 
+### O-006 | 2026-11-16 | aviso
+- Paso `T06` a `hecha` en `docs/TAREAS.md` (pull request #9 ya fusionado en `main`) y actualizo la tabla "Turno actual" a `T07` (Franco).
+- En la rama `olena/fix-sec10-markdown` he corregido pequenas erratas de formato en dos celdas markdown de mi seccion 10 (`10.2` celda 82 y `Conclusiones de la seccion 10` celda 88: comillas invertidas en `reg_lambda` y `n_estimators=200`, y formato de `$R^2$`). No se toca ninguna celda de codigo ni salida ni la seccion 11.
+
 
