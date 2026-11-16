@@ -125,4 +125,29 @@ En respuesta a `F-004` y `F-005`:
 2. **35 filas duplicadas sin `ID`:** Propongo **eliminarlas** antes del `train_test_split` en `T03`. Motivo: aunque probablemente sean clientes distintos con cuentas sin actividad, si una copia cae en `train` y su gemela exacta en `test`, estariamos evaluando el modelo con observaciones identicas a las de entrenamiento (fuga de informacion entre train y test). Al ser solo 35 filas de 30.000 (`0,11%`), eliminarlas no afecta la distribucion estadistica y asegura un `test` limpio.
 3. **Variable `SEX`:** Prefiero **excluirla** del modelo, comprobando en `T03` que el $R^2$ apenas varia al quitarla. Motivo: en concesion de credito real usar el sexo es discriminatorio y contrario a criterios eticos y regulatorios de banca responsable; ademas, si no aporta senal predictiva relevante frente al historial y resto del perfil, quitarla hace el modelo mas justo y simplifica el formulario de la app.
 
+### O-004 | 2026-11-13 | respuesta
+En respuesta a `F-007`, `F-008` y `F-009`:
+1. **Cambio de reparto (`F-008`):** Aceptado. Franco se queda con la app de Streamlit (`T04` y `T08`) y yo me encargo del README final (`T09`) ademas de la presentacion (`T10`).
+2. **Revision de `T03` y `T05`:** Revisadas las secciones 7, 8 y 9 del notebook. De acuerdo con quitar el logaritmo en importes (visto que empeora el modelo lineal de `0,364` a `0,241`) y con la limpieza de las 93 filas repetidas.
+3. **Tomo el turno del notebook con `T06`** en la rama `olena/ensembles-xgboost` (seccion 10: XGBoost con validacion cruzada). Franco, no toques `notebooks/proyecto_regresion.ipynb` hasta que se fusione este pull request.
+
+### O-005 | 2026-11-16 | traspaso
+Tarea y rama: `T06`, `olena/ensembles-xgboost`.
+Pull request: pendiente de abrir tras hacer push.
+Hecho:
+- Seccion 10 (`[L]`) en `notebooks/proyecto_regresion.ipynb`:
+  - `10.1`: `XGBoost por defecto` (`R2` train 0,752 frente a 0,450 en validacion, overfitting 48,99%).
+  - `10.2`: `XGBoost regularizado` (tres niveles; el mejor con `max_depth=4`, `learning_rate=0.05`, `n_estimators=200`, `min_child_weight=50`, `subsample=0.8`, `colsample_bytree=0.8`, `reg_lambda=5` logra `R2` validacion 0,475, RMSE 94.574, MAE 68.418 NT$ y overfitting 3,86%).
+  - `10.3`: Comparativa acumulada desde `Dummy` y `Ridge` (seccion 8) hasta `Random Forest`, `Gradient Boosting` (seccion 9) y `XGBoost` (seccion 10).
+  - `10.4`: Importancia por permutacion de `XGBoost regularizado` (`AGE` 0,100, `BILL_AMT1` 0,061, `EDUCATION` 0,048) y resumen por bloques.
+- Todas las celdas de codigo del notebook ejecutadas de principio a fin sin errores.
+Decisiones nuevas: ninguna; se mantiene `crear_preprocesador()` sin parametros y el mismo `cv` de 5 folds.
+Cambios en secciones o ficheros de la otra persona: ninguno.
+Que tiene que revisar la otra persona: seccion 10 de `notebooks/proyecto_regresion.ipynb`.
+Que le toca a la otra persona y por donde empezar:
+1. Revisar y fusionar el pull request de `T06` en `main`.
+2. Hacer `git checkout main`, `git pull` y crear la rama `franco/optuna-modelo-final` para `T07` (secciones 11 y 12).
+3. En Optuna (`T07`) se puede comparar el espacio de busqueda tanto para `HistGradientBoostingRegressor` (0,477) como para `XGBRegressor` (0,475), ya que estan practicamente empatados.
+Siguiente turno del notebook: Franco con `T07` (secciones 11 y 12), despues del merge.
+
 
