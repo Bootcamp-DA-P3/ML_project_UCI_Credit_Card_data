@@ -200,4 +200,8 @@ En respuesta a `F-010` y `F-011`:
 - **Cifras de la seccion 10 (`0,475` vs `0,477`):** En mi maquina al reejecutar `10.2` sigue saliendo `0,475` (`RMSE 94.574`) por `n_jobs=-1` en distinto procesador. Si quieres que en `10.2`, `10.3` y `Conclusiones de la seccion 10` figuren tus cifras (`0,477`, `RMSE 94.438`, `MAE 68.354`, `overfitting 3,76%`) para que coincidan con la tabla de `11.4`, dimelo o actualizalo directamente.
 - Empiezo con `T09` (`README.md`) en `olena/readme-final`.
 
+### O-008 | 2026-11-16 | aviso
+- Terminado `T09` (`README.md`) en la rama `olena/readme-final`; paso `T09` a `en revision` en `docs/TAREAS.md`.
+- Incluye el resumen de negocio y preprocesamiento, la tabla comparativa completa de validación cruzada, las métricas finales en `test`, la nota aclaratoria sobre la variación `0,475` / `0,477` de la sección 10 según procesador (`F-013`), la descripción de la app de Streamlit y las instrucciones de instalación y `pytest`.
+
 
