@@ -5,6 +5,8 @@ Proyecto grupal del bootcamp de Data Analytics de Factoría F5 Madrid.
 
 Estimamos el límite de crédito (`LIMIT_BAL`) adecuado para un cliente de tarjeta de crédito a partir de su perfil demográfico y de su historial de facturación y pagos de los últimos 6 meses, con el dataset *Default of Credit Card Clients* (UCI).
 
+Para ver app y dashboard hacer clic aca --> https://projectucicredit.streamlit.app/prediccion
+
 ---
 
 ## 1. Problema y caso de uso
