@@ -105,9 +105,6 @@ app/
   app_pages/                 Vistas Inicio, Dashboard y Predicción
 data/
   UCI_Credit_Card.csv        Dataset original (30.000 filas, 25 columnas)
-docs/
-  PLAN.md                    Plan técnico y criterios de validación
-  TAREAS.md                  Reparto de tareas, ramas y estado
 models/
   modelo_final.joblib        Pipeline entrenado (preprocesamiento + XGBoost)
 notebooks/
@@ -154,4 +151,4 @@ python -m pytest tests
 
 ## 8. Flujo de trabajo del equipo
 
-Trabajamos con ramas por tarea (`nombre/descripcion`) e integración en `main` mediante *pull request*. El notebook único (`notebooks/proyecto_regresion.ipynb`) se trabajó por turnos coordinados en `docs/TAREAS.md` y `OBSERVACIONES.md`.
+Trabajamos con ramas por tarea (`nombre/descripcion`) e integración en `main` mediante *pull request*. El notebook único (`notebooks/proyecto_regresion.ipynb`) se trabajó por turnos coordinados en `OBSERVACIONES.md`.
