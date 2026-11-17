@@ -47,7 +47,7 @@ Lo actualiza quien tiene o cierra el turno.
 | T06 | Ensembles B: XGBoost con validacion cruzada | Olena | `olena/ensembles-xgboost` | notebook unico, seccion 10 | T05 | hecha |
 | T07 | Optuna, modelo final e informe de metricas | Franco | `franco/optuna-modelo-final` | notebook unico, secciones 11 y 12; `models/modelo_final.joblib` | T05, T06 | hecha |
 | T08 | App: prediccion con el modelo final y recogida de feedback | Franco | `franco/app-modelo-feedback` | `app/` | T04, T07 | hecha |
-| T09 | README final | Olena | `olena/readme-final` | `README.md` | T07, T08 | en revision |
+| T09 | README final | Olena | `olena/readme-final` | `README.md` | T07, T08 | hecha |
 
 ## Orden de turnos y trabajo en paralelo
 
