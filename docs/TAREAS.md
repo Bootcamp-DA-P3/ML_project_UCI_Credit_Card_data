@@ -27,12 +27,12 @@ Lo actualiza quien tiene o cierra el turno.
 
 | Campo | Valor |
 |---|---|
-| Tiene el turno | Franco |
-| Tarea | T07 (secciones 11 y 12: Optuna, modelo final e informe de metricas) |
-| Rama | `franco/optuna-modelo-final` |
-| Estado | en revision desde el 2026-11-16 (pull request #12, traspaso `F-011`) |
-| Siguiente turno | Ninguno: con T07 el notebook queda completo |
-| Mientras tanto, Olena | Revisar el pull request de T07. No tocar el notebook |
+| Tiene el turno | Nadie |
+| Tarea | Ninguna: T07 fusionada (pull request #12, traspaso `F-011`) |
+| Rama | - |
+| Estado | notebook completo desde el 2026-11-16 |
+| Siguiente turno | Ninguno. Cualquier retoque se acuerda antes en `OBSERVACIONES.md` |
+| Mientras tanto, Olena | - |
 
 ## Tabla
 
@@ -45,8 +45,8 @@ Lo actualiza quien tiene o cierra el turno.
 | T04 | Esqueleto de la app y dashboard con graficos del EDA | Franco | `franco/app-esqueleto` | `app/` | T01, T02 | hecha |
 | T05 | Ensembles A: Random Forest y Gradient Boosting con validacion cruzada | Franco | `franco/ensembles-rf-gb` | notebook unico, seccion 9 | T03 | hecha |
 | T06 | Ensembles B: XGBoost con validacion cruzada | Olena | `olena/ensembles-xgboost` | notebook unico, seccion 10 | T05 | hecha |
-| T07 | Optuna, modelo final e informe de metricas | Franco | `franco/optuna-modelo-final` | notebook unico, secciones 11 y 12; `models/modelo_final.joblib` | T05, T06 | en revision |
-| T08 | App: prediccion con el modelo final y recogida de feedback | Franco | `franco/app-modelo-feedback` | `app/` | T04, T07 | en curso |
+| T07 | Optuna, modelo final e informe de metricas | Franco | `franco/optuna-modelo-final` | notebook unico, secciones 11 y 12; `models/modelo_final.joblib` | T05, T06 | hecha |
+| T08 | App: prediccion con el modelo final y recogida de feedback | Franco | `franco/app-modelo-feedback` | `app/` | T04, T07 | hecha |
 | T09 | README final | Olena | `olena/readme-final` | `README.md` | T07, T08 | en revision |
 
 ## Orden de turnos y trabajo en paralelo
