@@ -86,7 +86,7 @@ Normas del notebook:
 - Cada seccion termina con una celda markdown de conclusiones. Motivo: la seccion siguiente parte de esas decisiones.
 - Celdas markdown breves: titulo, subtitulo y conclusiones con las palabras justas. Sin parrafos explicativos.
 - Solo se escriben cifras que se hayan calculado antes en el propio notebook. Las cifras de referencia de este plan no se copian al notebook. Motivo: el notebook cuenta el trabajo en orden, y un numero sin celda que lo calcule no se puede comprobar.
-- El titulo de cada seccion (`## N. Titulo`) termina con la inicial de quien la hizo: `[F]` Franco, `[L]` Olena. Tambien en el indice de la seccion 0. Motivo: en un notebook unico se ve de un vistazo a quien preguntar por cada parte.
+- Los titulos de seccion (`## N. Titulo`) y el indice de la seccion 0 no llevan iniciales de autoria. Motivo: el notebook final queda limpio; la autoria de cada parte esta en `docs/TAREAS.md`.
 - Antes de cerrar un turno, "Restart & Run All" sin errores y con las salidas guardadas. Motivo: demuestra que el notebook corre de arriba abajo sin estado oculto, y la entrega necesita las salidas visibles.
 - Las funciones que tambien use la app van en `src/`, no en el notebook. Motivo: la app no puede importar un notebook, y un `.py` se revisa bien en git.
 

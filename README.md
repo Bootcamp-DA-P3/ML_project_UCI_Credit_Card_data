@@ -154,4 +154,4 @@ python -m pytest tests
 
 ## 8. Flujo de trabajo del equipo
 
-Trabajamos con ramas por tarea (`nombre/descripcion`) e integración en `main` mediante *pull request*. El notebook único (`notebooks/proyecto_regresion.ipynb`) se trabajó por turnos coordinados en `docs/TAREAS.md` y `OBSERVACIONES.md`, con autoría marcada en cada sección (`[F]` Franco, `[L]` Olena).
+Trabajamos con ramas por tarea (`nombre/descripcion`) e integración en `main` mediante *pull request*. El notebook único (`notebooks/proyecto_regresion.ipynb`) se trabajó por turnos coordinados en `docs/TAREAS.md` y `OBSERVACIONES.md`.
