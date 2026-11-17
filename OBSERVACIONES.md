@@ -142,6 +142,9 @@ En respuesta a `O-007`:
 - **Tests (nivel avanzado):** carpeta `tests/` con 14 pruebas de `src/preprocesamiento.py` y de `app/modelo.py` (redondeo, modelo guardado y feedback). Se ejecutan con `python -m pytest tests` desde la raiz. Tardan unos 20 segundos.
 - **Para el README (`T09`):** la app se ejecuta con `streamlit run app/app.py` desde la raiz. Las cifras del modelo son las de la seccion 12 del notebook; en `app/modelo.py` estan copiadas a mano.
 
+### F-014 | 2026-11-17 | aviso
+Quitadas las iniciales `[F]` y `[L]` de los titulos de seccion, del indice de la seccion 0 y de la linea del equipo del notebook, para dejarlo limpio. Solo cambia el texto de esos titulos, el contenido y las salidas no. Se retira la norma de `docs/PLAN.md` ("Normas del notebook") y la mencion del README. La autoria de cada parte sigue en `docs/TAREAS.md`.
+
 ## Seccion de Olena
 
 ### O-001 | 2026-11-10 | respuesta
